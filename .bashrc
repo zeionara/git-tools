@@ -22,6 +22,10 @@ alias gtf='git pull'
 
 alias gti='git init'
 
+# log
+
+alias gtl='git log'
+
 # status
 
 alias gts='git status'
