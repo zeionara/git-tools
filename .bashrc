@@ -18,6 +18,10 @@ alias gtd='git pull'
 
 alias gtf='git pull'
 
+# init
+
+alias gti='git init'
+
 # status
 
 alias gts='git status'
@@ -26,3 +30,9 @@ alias gtsu='git status -u'
 # upload (push)
 
 alias gtu='git push'
+alias gtui='git push -u origin master'
+
+# ? (diff)
+
+alias gtx='git diff'
+alias gtxs='git diff --staged'
