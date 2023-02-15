@@ -26,6 +26,14 @@ alias gti='git init'
 
 alias gtl='git log'
 
+# remote
+
+alias gtr='git remote'
+alias gtrv='git remote -v'
+
+alias gtra='git remote add'
+alias gtrao='git remote add origin'
+
 # status
 
 alias gts='git status'
