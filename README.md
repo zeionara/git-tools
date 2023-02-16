@@ -1,5 +1,9 @@
 # Git tools
 
+<p align="center">
+    <img src="assets/images/logo.png"/>
+</p>
+
 Useful aliases and scripts for git which simplify routine operations.
 
 ## Installation

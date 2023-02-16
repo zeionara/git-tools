@@ -44,6 +44,22 @@ alias gtrsuo='git remote set-url origin'
 alias gts='git status'
 alias gtsu='git status -u'
 
+# tag
+
+alias gtt='git tag'
+
+gtts () {  # tag and sync
+    if [[ -z $2 ]]; then
+        repo=origin
+        tag=$1
+    else
+        repo=$1
+        tag=$2
+    fi
+
+    git tag $tag && git push $repo $tag
+}
+
 # upload (push)
 
 alias gtu='git push'
