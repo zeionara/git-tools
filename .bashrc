@@ -32,11 +32,12 @@ alias gtl='git log'
 
 alias gtr='git remote'
 alias gtrv='git remote -v'
-alias gtrsu='git remote set-url'
-alias gtrsuo='git remote set-url origin'
 
 alias gtra='git remote add'
 alias gtrao='git remote add origin'
+
+alias gtrsu='git remote set-url'
+alias gtrsuo='git remote set-url origin'
 
 # status
 
