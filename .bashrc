@@ -18,7 +18,7 @@ alias gtd='git pull'
 
 # fetch
 
-alias gtf='git pull'
+alias gtf='git fetch'
 
 # init
 
