@@ -8,6 +8,12 @@ alias gta='git add'
 alias gtau='git add -u'
 alias gtaa='git add -A'
 
+# branch (checkout)
+
+alias gtb='git checkout'
+alias gtbi='git checkout -b'
+alias gtbl='git branch'
+
 # commit
 
 alias gtc='git commit -m'
@@ -15,6 +21,10 @@ alias gtc='git commit -m'
 # download (pull)
 
 alias gtd='git pull'
+
+# mErgE (merge)
+
+alias gte='git merge'
 
 # fetch
 
@@ -65,7 +75,7 @@ gtts () {  # tag and sync
 alias gtu='git push'
 alias gtui='git push -u origin master'
 
-# ? (diff)
+# eXtra (diff)
 
 alias gtx='git diff'
 alias gtxs='git diff --staged'
