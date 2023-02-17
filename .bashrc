@@ -16,6 +16,10 @@ alias gtc='git commit -m'
 
 alias gtd='git pull'
 
+# extract (clone)
+
+alias gte='git clone'
+
 # fetch
 
 alias gtf='git fetch'
