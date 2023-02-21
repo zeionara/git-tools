@@ -5,8 +5,9 @@ alias gt=git
 # add
 
 alias gta='git add'
-alias gtau='git add -u'
 alias gtaa='git add -A'
+alias gtap='git add -p'
+alias gtau='git add -u'
 
 # branch (checkout)
 
