@@ -5,14 +5,16 @@ alias gt=git
 # add
 
 alias gta='git add'
-alias gtau='git add -u'
 alias gtaa='git add -A'
+alias gtap='git add -p'
+alias gtau='git add -u'
 
 # branch (checkout)
 
 alias gtb='git checkout'
 alias gtbi='git checkout -b'
-alias gtbl='git branch -a'
+alias gtbl='git branch'
+alias gtba='git branch -a'
 
 # commit
 
@@ -41,6 +43,10 @@ alias gti='git init'
 # log
 
 alias gtl='git log'
+
+# pick (cherry-pick)
+
+alias gtp='git cherry-pick'
 
 # remote
 
