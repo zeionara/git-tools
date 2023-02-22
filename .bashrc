@@ -12,7 +12,7 @@ alias gtaa='git add -A'
 
 alias gtb='git checkout'
 alias gtbi='git checkout -b'
-alias gtbl='git branch'
+alias gtbl='git branch -a'
 
 # commit
 
