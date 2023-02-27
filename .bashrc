@@ -36,9 +36,21 @@ alias gtf='git fetch'
 
 alias gtg='git clone'
 
+# history (stash list)
+
+alias gth='git stash list'
+
 # init
 
 alias gti='git init'
+
+# jump (stash push)
+
+alias gtj='git stash'
+
+# kill (stash pop)
+
+alias gtk='git stash pop'
 
 # log
 
