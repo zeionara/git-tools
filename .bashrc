@@ -95,9 +95,28 @@ gtts () {  # tag and sync
 # upload (push)
 
 alias gtu='git push'
-alias gtui='git push -u origin master'
+
+gtuo () {
+    branch=${1:-master}
+
+    git push origin $branch
+}
+
+gtuoi () {
+    branch=${1:-master}
+
+    git push -u origin $branch
+}
 
 # eXtra (diff)
 
 alias gtx='git diff'
 alias gtxs='git diff --staged'
+
+# github cli
+
+ghf () {
+    port=${1:-8080}
+
+    gh cs ports forward $port:$port
+}
