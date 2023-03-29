@@ -21,7 +21,7 @@ alias gtba='git branch -a'
 alias gtc='git commit -m'
 
 gtcu () {
-    git commit -m $1
+    git commit -m "$1"
     git push
 }
 
