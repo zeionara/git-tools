@@ -65,6 +65,11 @@ alias gtl='git log'
 
 alias gtp='git cherry-pick'
 
+# quit tracking (assume unchanged)
+
+alias gtq='git update-index --assume-unchanged'
+alias gtqq='git update-index --no-assume-unchanged'
+
 # remote
 
 alias gtr='git remote'
@@ -112,6 +117,10 @@ gtuoi () {
 
     git push -u origin $branch
 }
+
+# take version
+
+alias gtv='git merge --no-commit --squash'
 
 # eXtra (diff)
 
