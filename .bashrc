@@ -102,6 +102,25 @@ gtts () {  # tag and sync
     git tag $tag && git push $repo $tag
 }
 
+gttbs () { # tag from branch and sync
+    if [[ -z $2 ]]; then
+        repo=origin
+        tag=$1
+    else
+        repo=$1
+        tag=$2
+    fi
+
+    current_branch=`git rev-parse --abbrev-ref HEAD`
+
+    git checkout $tag && \
+    git tag $tag && \
+    git push $repo refs/tags/$tag:refs/tags/$tag && \
+    git checkout $current_branch && \
+    git branch -d $tag && \
+    git push $repo -d refs/heads/$tag
+}
+
 # upload (push)
 
 alias gtu='git push'
