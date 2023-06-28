@@ -25,7 +25,7 @@ gtc () {
     if test -z "$description"; then
         git commit -m "$title"
     else
-        git commit -m "$title\n\n$description"
+        git commit -m "$title" -m "$description"
     fi
 }
 
