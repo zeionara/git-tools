@@ -18,7 +18,18 @@ alias gtba='git branch -a'
 
 # commit
 
-alias gtc='git commit -m'
+gtc () {
+    title="$1"
+    description="$2"
+
+    if test -z "$description"; then
+        git commit -m "$title"
+    else
+        git commit -m "$title\n\n$description"
+    fi
+}
+
+# alias gtc='git commit -m'
 
 gtcu () {
     git commit -m "$1"
