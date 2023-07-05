@@ -16,6 +16,19 @@ alias gtbi='git checkout -b'
 alias gtbl='git branch'
 alias gtba='git branch -a'
 
+gtbr () {
+    if [ -z "$2" ]; then
+        branch="$1"
+        repo='origin'
+    else
+        branch="$2"
+        repo="$1"
+    fi
+
+    git branch --delete "$branch"
+    git push "$repo" --delete "$branch"
+}
+
 # commit
 
 gtc () {
