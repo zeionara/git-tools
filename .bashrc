@@ -32,14 +32,22 @@ gtbr () {
 # commit
 
 gtc () {
-    title="$1"
-    description="$2"
+    command='git commit'
 
-    if test -z "$description"; then
-        git commit -m "$title"
-    else
-        git commit -m "$title" -m "$description"
-    fi
+    for message in "$@"; do
+        command="$command -m '$message'"
+    done
+
+    eval "$command"
+
+    # title="$1"
+    # description="$2"
+
+    # if test -z "$description"; then
+    #     git commit -m "$title"
+    # else
+    #     git commit -m "$title" -m "$description"
+    # fi
 }
 
 # alias gtc='git commit -m'
