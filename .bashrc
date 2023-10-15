@@ -178,6 +178,16 @@ alias gtv='git merge --no-commit --squash'
 alias gtx='git diff'
 alias gtxs='git diff --staged'
 
+# GPG sign
+
+alias son='git config --local commit.gpgsign true'
+alias soff='git config --local commit.gpgsign false'
+alias sget='git config --local commit.gpgsign'
+
+alias sgon='git config --global commit.gpgsign true'
+alias sgoff='git config --global commit.gpgsign false'
+alias sgget='git config --global commit.gpgsign'
+
 # github cli
 
 ghf () {
